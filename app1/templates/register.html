@@ -20,30 +20,50 @@
             <h1>Create your ConnectX Account</h1>
             <p class="subtitle">Join meetings, chat, and collaborate instantly.</p>
 
+            <!-- Messages -->
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="alert">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+
             <form method="POST" action="{% url 'register' %}">
                 {% csrf_token %}
-                
+
                 <!-- Full Name -->
                 <div class="form-group">
                     <label for="full_name">Full Name</label>
-                    <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+                    <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" value="{{ form.full_name.value|default:'' }}" required>
+                    {% if form.full_name.errors %}
+                        <small class="error-text">{{ form.full_name.errors.0 }}</small>
+                    {% endif %}
                 </div>
 
                 <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" value="{{ form.email.value|default:'' }}" required>
+                    {% if form.email.errors %}
+                        <small class="error-text">{{ form.email.errors.0 }}</small>
+                    {% endif %}
                 </div>
 
                 <!-- Password -->
                 <div class="form-group">
                     <label for="password1">Password</label>
                     <input type="password" id="password1" name="password1" placeholder="Enter your password" required>
+                    {% if form.password1.errors %}
+                        <small class="error-text">{{ form.password1.errors.0 }}</small>
+                    {% endif %}
                 </div>
 
+                <!-- Confirm Password -->
                 <div class="form-group">
                     <label for="password2">Confirm Password</label>
                     <input type="password" id="password2" name="password2" placeholder="Confirm your password" required>
+                    {% if form.password2.errors %}
+                        <small class="error-text">{{ form.password2.errors.0 }}</small>
+                    {% endif %}
                 </div>
 
                 <button type="submit" class="btn">Create Account</button>
