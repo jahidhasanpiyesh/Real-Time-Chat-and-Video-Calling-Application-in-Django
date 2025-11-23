@@ -4,6 +4,14 @@ A modern, professional **video conferencing web application** built with Django.
 
 ---
 
+## Screenshots
+
+![User Authentication Flow](https://github.com/jahidhasanpiyesh/ConnectX/blob/main/demo/demo1.png) 
+![Meeting Flow and Landing Page](https://github.com/jahidhasanpiyesh/ConnectX/blob/main/demo/demo2.png)
+
+
+**Live Demo:** [Click here to view live](https://connectx.pythonanywhere.com/)
+
 ## Features ✅
 
 - User registration and login **via email**  
@@ -103,7 +111,7 @@ ConnectX uses **ZegoCloud** for real-time video and audio calls.
 ### Frontend (videocall.html)
 
 ```html
-<script src="https://cdn.zego.im/zego-uikit-web-2.8.1.js"></script>
+<script src="https:// Your Cdn"></script>
 <div id="video-container"></div>
 <script>
 const appID = <YOUR_ZEGOCLOUD_APP_ID>;
