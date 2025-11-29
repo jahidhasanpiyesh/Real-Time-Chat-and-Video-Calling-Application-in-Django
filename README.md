@@ -14,17 +14,24 @@ A modern, professional **video conferencing web application** built with Django.
 
 ## Features ✅
 
-- User registration and login **via email**  
-- Create or join video meetings  
-- User dashboard with meeting management  
-- Responsive design for **desktop and mobile**  
-- Full-screen video call support  
-- Clean and professional UI/UX inspired by modern conferencing apps  
-- Email-based authentication ensures security and simplicity  
-- Friendly user interface with smooth animations  
-- Join meetings via Room ID instantly  
-- Logout securely from any device  
-- **Real-time video and audio calls powered by ZegoCloud**
+* User registration and login via email
+* Create or join video meetings
+* User dashboard with meeting management
+* Responsive design for desktop and mobile
+* Full-screen video call support
+* Clean and professional UI/UX inspired by modern conferencing apps
+
+### 📲 Enhanced Communication Features:
+
+* **Real-time Video and Audio Calls:** Powered by ZegoCloud for low-latency, high-quality connections.
+* **Secure SMS Messaging:** Integrated functionality to send direct, authenticated SMS messages from the platform. **(আপনার ব্যবহৃত API-এর নাম এখানে উল্লেখ করতে পারেন, যেমন: Integrated with Twilio/Fast2SMS)**
+
+### ⚙️ Usability & Security:
+
+* Email-based authentication ensures security and simplicity
+* Friendly user interface with smooth animations
+* Join meetings via Room ID instantly
+* Logout securely from any device
 
 ---
 
