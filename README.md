@@ -191,7 +191,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Contact ✉️
+## 👤 Author
 
 - Developer: Md Jahid Hasan  
 - Email: jahidhasanpiyesh@gmail.com  
